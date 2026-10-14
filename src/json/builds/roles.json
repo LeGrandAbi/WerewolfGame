@@ -1,0 +1,32 @@
+[
+    {
+        "type": "insert image",
+        "collumn": "illustration",
+        "pos": [150,150,500,500],
+        "specs": [
+            "fit"
+        ]
+    },
+    {
+        "type": "insert text",
+        "collumn": "name",
+        "font": "AncientMedium",
+        "cpl": 50,
+        "color": [255,255,255,0],
+        "pos": [0,0,800,150],
+        "specs": [
+            "fit"
+        ]
+    },
+    {
+        "type": "insert text",
+        "collumn": "description",
+        "font": "AncientMedium",
+        "cpl": 50,
+        "color": [255,255,255,0],
+        "pos": [50,625,700,150],
+        "specs": [
+            "fit"
+        ]
+    }
+]
