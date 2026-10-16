@@ -78,6 +78,22 @@ def render_text(text, font, color, max_len=50):
 		y = y + line.get_height()
 	return surf
 
+
+def outline(surf, color, width):
+    if width <= 0:
+        return surf.copy()
+    w, h = surf.get_size()
+    mask = pg.mask.from_surface(surf)
+    outline_img = mask.to_surface(setcolor=color, unsetcolor=(0, 0, 0, 0))
+    new_surf = pg.Surface((w + width * 2, h + width * 2), pg.SRCALPHA)
+    for dx in range(-width, width + 1):
+        for dy in range(-width, width + 1):
+            if dx != 0 or dy != 0:  # Skip center to optimize slightly
+                new_surf.blit(outline_img, (width + dx, width + dy))
+    new_surf.blit(surf, (width, width))
+    
+    return new_surf
+
 ######################################################################################################################################
 
 def print_info(text, forced=False):

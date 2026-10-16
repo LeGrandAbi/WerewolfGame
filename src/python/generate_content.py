@@ -211,6 +211,10 @@ def apply_surf(surf, dest, instruction):
                         surf.blit(color_surf, (0,0), special_flags=pg.BLEND_MAX)
                     case _ :
                         lcu.print_error(f"Incorrect colorize argument : \"{operation}\"")
+            case "outline" :
+                width = int(args[1])
+                color = (int(args[2]), int(args[3]), int(args[4]))
+                surf = lcu.outline(surf, color, width)
             case _ :
                 lcu.print_error(f"Incorrect specs argument : \"{args[0]}\"")
     if "background" in specs:
