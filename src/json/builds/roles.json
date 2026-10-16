@@ -4,7 +4,8 @@
         "collumn": "illustration",
         "pos": [150,150,500,500],
         "specs": [
-            "fit"
+            "fit",
+            "outline 2 255 255 255"
         ]
     },
     {
