@@ -1,41 +1,3 @@
-[VILL]	villageois : "rien"
-[LOUP]	loup garou : "vote avec les autres loups garou qui eliminer durant la nuit"
-[LOMA]loup maudit : "loup garou + un villageois de son choix devient loup garou durant la nuit suivant sa mort"
-
-[MAIR]	maire : "Est elu durant le prologue, sa voix comptera double durant les votes de pendaison"
-
-[MERE]	la mere : "Lorsque vous etes appele, prenez connaissances de la carte role du pere; si il meurt, vous mourrez avec lui"
-[PERE]	le pere : "Lorsque vous etes appele, prenez connaissances de la carte role de la mere; si elle meurt, vous mourrez avec elle"
-[SOEU]	la soeur : "Lorsque vous etes appele, prenez connaissances de la carte role du frere"
-[FRER]	le frere : "Lorsque vous etes appele, prenez connaissances de la carte role de la soeur"
-[VOYA]	voyante : "Lorsque vous etes appele: Vous pouvez regarder les cartes d'un joueur de votre choix"
-[SORC]	la sorciere : "Lorsque vous etes appele: Vous pouvez tuer un joueur de votre choix "
-[DRUI]	le druide : "Lorsquee vous etes appele: Vous pouvez revenir un joueur mort durant la nuit"
-[CHAS]	chasseur : "Lorsque vous mourrez, tuez un autre joueur de votre choix"
-[BERG]	le berger : "Lorsque vous etes appele: Choisissez un joueur immunise au vote des loups garou"
-[ANGE]	l'ange : "Lorsque votre mort est annonce, montrez cette carte et survivez. Utilisable une seule fois"
-[TRAP]	la trappeuse : "Reveillezvous et votez parmi les loups garou"
-[CROW]	le corbeau : "Lorsque vous etes appele: Choissisez un joueur sur lequel placer les corbeaux, le joueur au corbeaux recoit 2 votes supplementaires au prochain vote de pendaison"
-[APOC]	L'apocryphe : "Lorsque vous mourrez, revelez toute les cartes d'un autre joueur de votre choix"
-[BARD]	La barde : "Revelez cette carte durant le prologue, vous pouvez ainsi controller la musique durant toute la partie"
-[PAYS]	paysan.ne : "Rien, desole"
-
-ORDER:
-	PROLOGUE:
-		[BARD]: appellez la barde afin qu'elle devoile sa carte pouvoir, et prendre le controle sur la musique
-		[VOYA]: apellez la voyante afin qu'elle voit les cartes d'un joueur de son choix
-		[PERE/MERE]: Apellez le pere et la mere afin qu'ils puissent se montrer leur cartes, si l'un meurt, l'autre aussi
-		[FRER/SOEU]: Apellez le pere et la mere afin qu'ils puissent se montrer leur cartes
-		[MAIR]: Votez un joueur afin qu'il recoive le statut de maire: 2 voix durant les votes de pendaison
-	NUIT:
-		[LOMA]: Si la mort du loup maudit a ete annonce durant le jour precedant, alors il est invoque une unique fois afin d'attribuer le role de loup garou a un villageois de son choix
-		[VOYA]: apellez la voyante afin qu'elle voit les cartes d'un joueur de son choix
-		[BERG]: apellez le berger afin qu'il protege des loups un joueur de son choix durant cette nuit
-		[LOUP]: appelez les afin de voterqui tuer
-		[SORC]: faire le pwr
-		[DRUI]: faire le pwr
-		[CROW]: attribuez les corbeaux
-
 CONTENT:
 	14x each power card
 	6x paysan power card
@@ -64,12 +26,16 @@ ORDER PER PLAYER:
 	13:
 		prologue:	AMAN -> SOEU -> LOUP -> VOYA -> MAIR
 		nuit:		LOMA -> VOYA -> BERG -> LOUP -> SORC -> DRUI -> CROW
-	14-20:
+	14:
 		prologue:	AMAN -> SOEU -> LOUP -> VOYA -> MAIR -> BARD
+		nuit:		LOMA -> VOYA -> BERG -> LOUP -> SORC -> DRUI -> CROW
+	15-20:
+		prologue:	PAYS -> AMAN -> SOEU -> LOUP -> VOYA -> MAIR -> BARD
 		nuit:		LOMA -> VOYA -> BERG -> LOUP -> SORC -> DRUI -> CROW
 
 INFO MJ:
 	Prologue:
+		PAYS: "Les paysans s'endorment plus tard, ils leur restent du travail a faire ensemble"
 		AMAN: "Les deux amants se reveillent et prennent connaissances de l'identite secrete de l'autre. Si l'un vient a mourrir, l'autre le suivra en outre-tombe"
 		SOEU: "Les deux soeurs se reveillent et prennent connaissances de l'identite secrete de l'autre"
 		LOUP: "Les loups se reveillent et se reunissent dans une clairiere afin de prendre connaissance"
