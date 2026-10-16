@@ -47,3 +47,41 @@ CONTENT:
 	1x colier de maire
 	1x crow token
 	1x help guide
+
+ORDER PER PLAYER:
+	4-5 :
+		prologue:	LOUP -> VOYA -> MAIR
+		nuit:		VOYA -> LOUP -> SORC -> DRUI
+	6:
+		prologue:	LOUP -> VOYA -> MAIR
+		nuit:		LOMA -> VOYA -> BERG -> LOUP -> SORC -> DRUI
+	7-10:
+		prologue:	SOEU -> LOUP -> VOYA -> MAIR
+		nuit:		LOMA -> VOYA -> BERG -> LOUP -> SORC -> DRUI
+	11-12:
+		prologue:	AMAN -> SOEU -> LOUP -> VOYA -> MAIR
+		nuit:		LOMA -> VOYA -> BERG -> LOUP -> SORC -> DRUI
+	13:
+		prologue:	AMAN -> SOEU -> LOUP -> VOYA -> MAIR
+		nuit:		LOMA -> VOYA -> BERG -> LOUP -> SORC -> DRUI -> CROW
+	14-20:
+		prologue:	AMAN -> SOEU -> LOUP -> VOYA -> MAIR -> BARD
+		nuit:		LOMA -> VOYA -> BERG -> LOUP -> SORC -> DRUI -> CROW
+
+INFO MJ:
+	Prologue:
+		AMAN: "Les deux amants se reveillent et prennent connaissances de l'identite secrete de l'autre. Si l'un vient a mourrir, l'autre le suivra en outre-tombe"
+		SOEU: "Les deux soeurs se reveillent et prennent connaissances de l'identite secrete de l'autre"
+		LOUP: "Les loups se reveillent et se reunissent dans une clairiere afin de prendre connaissance"
+		VOYA: "La voyante se reveille et consulte son orbe afin de connaitre le pouvoir d'un habitant"
+		"Le village se reveille"
+		MAIR: "Le village doit elir un maire!"
+		BARD: "Le barde est en ville, et il le fait savoir..."
+	Nuit:
+		LOMA: "Encore chaud, le cadavre du loup maudit infecte un malheureux villageois en loup-garou"
+		VOYA: "La voyante se reveille et consulte son orbe afin de connaitre le pouvoir d'un habitant"
+		BERG: "Le berger se reveille afin de proteger un habitant avec son troupeau"
+		LOUP: "Les loups se reveille, et choississent une victime afin de combler leur affreux appetit"
+		SORC: "La sorciere se reveille et, si elle le souhaite, empoisonne un habitant"
+		DRUI: "Le druide se reveille et, s'il le souhaite, soigne un habitant mort durant la nuit"
+		CROW: "Le corbeau se reveille et choisit sur qui porter son mauvais presage"
