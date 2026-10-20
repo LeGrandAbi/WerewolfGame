@@ -1,0 +1,10 @@
+[
+    {
+        "type": "insert image",
+        "collumn": "illustration",
+        "pos": [50,50,700,700],
+        "specs": [
+            "fit"
+        ]
+    }
+]
