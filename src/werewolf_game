@@ -47,7 +47,7 @@ INFO MJ:
 		LOMA: "Encore chaud, le cadavre du loup maudit infecte un malheureux villageois en loup-garou"
 		VOYA: "La voyante se reveille et consulte son orbe afin de connaitre le pouvoir d'un habitant"
 		BERG: "Le berger se reveille afin de proteger un habitant avec son troupeau"
-		LOUP: "Les loups se reveille, et choississent une victime afin de combler leur affreux appetit"
+		LOUP: "Les loups (et le trappeur) se reveille, et choississent une victime afin de combler leur affreux appetit"
 		SORC: "La sorciere se reveille et, si elle le souhaite, empoisonne un habitant"
 		DRUI: "Le druide se reveille et, s'il le souhaite, soigne un habitant mort durant la nuit"
 		CROW: "Le corbeau se reveille et choisit sur qui porter son mauvais presage"
